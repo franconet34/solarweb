@@ -73,3 +73,24 @@
 .btn {
   color: white;
 }
+.fa-truck {
+  color: orange;
+  width: 5%;
+  margin-right: 5%;
+}
+.fa-award {
+  color: rgb(195, 0, 255);
+  width: 5%;
+  margin-right: 5%;
+}
+.fa-bag-shopping {
+  color: rgb(0, 72, 255);
+  width: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.footer-bottom {
+  padding-left: 30%;
+  justify-content: center;
+  display: flex;
+}

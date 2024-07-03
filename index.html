@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Web</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="icons/fontawesome/css/fontawesome.css">
+  </head>
+  <body>
+    <!--Main Navigation-->
+<header>
+  <!-- Jumbotron -->
+  <div class="p-3 text-center bg-white border-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- Left elements -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+          <a href="#!" class="ms-md-2">
+            <img src="images/logo.png" height="100" width="100" />
+          </a>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="col-md-4">
+          <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+            <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" />
+            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+          <div class="d-flex">
+            <!-- Cart -->
+            <a class="text-reset me-3" href="#">
+              <span><i class="fas fa-shopping-cart"></i></span>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+
+            <!-- Notification -->
+            <div class="dropdown">
+              <a data-mdb-dropdown-init class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Some news</a></li>
+                <li><a class="dropdown-item" href="#">Another news</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="dropdown">
+              <a data-mdb-dropdown-init class="text-reset dropdown-toggle me-3 hidden-arrow" href="#" id="navbarDropdown" role="button"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="flag flag-united-kingdom m-0"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-united-kingdom"></i>English
+                    <i class="fa fa-check text-success ms-2"></i></a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-poland"></i>Polski</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-china"></i>中文</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-japan"></i>日本語</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-germany"></i>Deutsch</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-france"></i>Français</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-spain"></i>Español</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-russia"></i>Русский</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="flag flag-portugal"></i>Português</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- User -->
+            <div class="dropdown">
+              <a data-mdb-dropdown-init class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="22"
+                  alt="" loading="lazy" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+
+    <button class="navbar-toggler" type="button" data-toggle="navbar-nav" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container justify-content-center justify-content-md-between">
+      <!-- Left links -->
+      <ul class="navbar-nav flex-row" id="navbarNavDropdown">
+        <li class="nav-item me-2 me-lg-0">
+          <a class="nav-link" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1"
+            data-mdb-ripple-init class="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1" aria-haspopup="true">
+            <i class="fas fa-bars me-1"></i>
+            <span>Categories</span>
+          </a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Bestsellers</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Inspirations</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary" data-mdb-ripple-color="dark" type="button">
+        Add to Cart<i class="fas fa-shopping-cart ms-2"></i>
+      </button>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+  <!-- Background image -->
+  <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/IMG-20240626-WA0067.jpg"
+            class="d-block w-100"
+            height="500"
+            alt="photo-1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/IMG-20240626-WA0068.jpg"
+            class="d-block w-100"
+            height="500"
+            alt="photo-2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/IMG-20240626-WA0069.jpg"
+            class="d-block w-100"
+            height="500"
+            alt="photo-3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- Background image -->
+</header>
+
+<!--Happiness Code -->
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class=" card-h1">Best Selling Product</h2>
+        <p class=""></p>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar7.jpg" class="card-img-top" alt="Solar Panel Installation">
+          <div class="card-body">
+            <h5 class="card-title">Residential Solar</h5>
+            <p class="card-text">Install solar panels on your home and start saving on energy bills.</p>
+            <button class="my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar3.jpg" class="card-img-top" alt="Solar Panel Maintenance">
+          <div class="card-body">
+            <h5 class="card-title">Solar Maintenance</h5>
+            <p class="card-text">Keep your solar panels running efficiently with our maintenance services.</p>
+            <button class=" my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar1.jpg" class="card-img-top" alt="Solar Panel Installation on a Commercial Building">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Solar</h5>
+            <p class="card-text">Reduce energy costs and increase sustainability for your business with solar energy.</p>
+            <button class=" my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar5.jpg" class="card-img-top" alt="Solar Panel Installation on a Commercial Building">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Solar</h5>
+            <p class="card-text">Reduce energy costs and increase sustainability for your business with solar energy.</p>
+            <button class=" my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h4 class="card-h1"> Latest Product<button class="my-btns btn btn-primary">5%OFF</button></h4>
+    
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar1.jpg" class="card-img-top" alt="Solar Panel Installation">
+          <div class="card-body">
+            <h5 class="card-title">Residential Solar</h5>
+            <p class="card-text">Install solar panels on your home and start saving on energy bills.</p>
+            <button class=" my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+            
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar2.jpg" class="card-img-top" alt="Solar Panel Maintenance">
+          <div class="card-body">
+            <h5 class="card-title">Solar Maintenance</h5>
+            <p class="card-text">Keep your solar panels running efficiently with our maintenance services.</p>
+            <button class=" my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar3.jpg" class="card-img-top" alt="Solar Panel Installation on a Commercial Building">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Solar</h5>
+            <p class="card-text">Reduce energy costs and increase sustainability for your business with solar energy.</p>
+            <button class="my-btn btn btn-primary"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/Solar6.jpg" class="card-img-top" alt="Solar Panel Installation on a Commercial Building">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Solar</h5>
+            <p class="card-text">Reduce energy costs and increase sustainability for your business with solar energy.</p>
+            <button class="my-btn btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center col-btn ">
+      <div class="row row-cols-auto">
+        <div  class=" col"> <button class="btn btn-primary text-light ">1</button></div>
+        <div class=" col"><button class="btn btn-light text-primary ">2</button></div>
+        <div class=" col"><button class="btn btn-light text-primary ">3</button></div>
+        <div class=" col"><button class="btn btn-light text-primary ">4</button></div>
+        <div class=" col"><button class="btn btn-light text-primary ">5</button></div>
+        <div class="col"><button class="btn btn-light text-primary ">6</button></div>
+        <div class="col"><button class="btn btn-light text-primary">7</button></div>
+        <div class=" col"><button class="btn btn-light text-primary ">8</button></div>
+        <div class="col"><button class="btn btn-light text-primary">Next</button></div>
+      </div>
+    </div>
+   
+  </div>
+<!--Happiness Code-->
+
+
+
+
+<!--Main Navigation-->
+<div class="container-fluid" style="background-color: #ffffff;">
+  <div class="row">
+    <div class="col-xl-4 col-lg-6 mb-4">
+      <div class="card-group">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-2x fa-truck"></i>
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Quick Delivery</p>
+              <p class="text-muted mb-0">Efficient and prompt transportation of goods</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-6 mb-4">
+      <div class="card-group">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-2x fa-award"></i>
+            <div class="ms-3">
+              <p class="fw-bold mb-1">100% Satisfaction Guarantee</p>
+              <p class="text-muted mb-0">Your complete satisfaction is guaranteed with all our products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-6 mb-4">
+      <div class="card-group">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-2x fa-bag-shopping"></i>
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Bulk Purchase Available</p>
+              <p class="text-muted mb-0">Enjoy better discount when you buy in bulkEnjoy better discount when you buy in bulk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #ffffff;">
+  <div class="row">
+    <div class="col-lg-6 sm-12">
+      <p style="margin-left: 4%; color: grey;">
+        <b style="color: rgba(0, 0, 0, 0.85);">Solarweb</b> is your trusted brand for everything food, both for human consumption and animals. Here we provide you with a wide variety of fresh produce, animal feeds, and other farm-related product comfort of your home and high-quality products that are essential to your farm also.
+      </p>
+
+    </div>
+    <div class="col-lg-6 sm-12">
+      <button class="btn btn-primary my-btn" style="padding: 12px;">More About Us</button>
+
+    </div>
+
+  
+  </div>
+  
+  <!-- Footer -->
+<footer class="container-fluid text-center text-lg-start bg-body-tertiary text-muted">
+  <section class="" style="background-color: #ffffff;">
+    <hr>
+    <div class="container-fluid text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="images/logo.png" height="100" width="100"  alt="logo">
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#" class="text-reset">Solar Type</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Solar Type2</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Solar Type3</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Solar Type4</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Shop</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  
+  <div class="row container-fluid" style="background-color: rgb(0, 0, 0); padding-top: 3%; padding-bottom: 3%; ">
+    <div class="col-6 sm-12">
+      <p >© 2024 Copyright Vitual Studio Code</p>
+    </div>
+    <div class="col-6 sm-12 " >
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+
+
+    
+
+    
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="icons/fontawesome/js/fontawesome.js"></script>
+  <script src="https://kit.fontawesome.com/ea9ea229c3.js" crossorigin="anonymous"></script>
+</html

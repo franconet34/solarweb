@@ -61,3 +61,15 @@
   background-color: white !important
   ;
 }
+.fw-bold {
+  color: rgba(0, 0, 255, 0.709) !important;
+}
+
+.my-btn {
+  margin-left: 60%;
+  border-radius: 5px;
+  background-color: white;
+}
+.btn {
+  color: white;
+}

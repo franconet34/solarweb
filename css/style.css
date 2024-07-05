@@ -94,3 +94,7 @@
   justify-content: center;
   display: flex;
 }
+.product-type {
+  display: flex;
+  background-color: white;
+}
